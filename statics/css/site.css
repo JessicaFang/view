@@ -1,0 +1,10 @@
+#v1{
+    background: red;
+}
+#bg{
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-image: url("../image/2.jpg");
+
+}
