@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --open --port 8064"
+    "dev": "webpack-dev-server --hot --open --port 8074"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "mint-ui": "^2.2.13",
+    "moment": "^2.22.2",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   }

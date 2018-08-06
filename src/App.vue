@@ -1,26 +1,26 @@
 <template>
     <!--html书写-->
     <div>
-    <span v-text="msg" @click="add" class="c" ></span>
-    <router-link to="/login">登录</router-link>
-    <router-link to="/register">注册</router-link>
+    <mt-header fixed title="传智播客.黑马程序员VUE商城" ></mt-header>
     <router-view></router-view>
-    <mt-button type="danger" @click="tip"  size="large">danger</mt-button>
-        <button @click="add1">点击</button>
-        <button @click="add2">点击</button>
-        <div class="mui-content">
-            <ul class="mui-table-view mui-grid-view mui-grid-9">
-                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                    <span class="mui-icon mui-icon-home"></span>
-                    <div class="mui-media-body">Home</div></a></li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                    <span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
-                    <div class="mui-media-body">Email</div></a></li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                    <span class="mui-icon mui-icon-chatbubble"></span>
-                    <div class="mui-media-body">Chat</div></a></li>
-            </ul>
-        </div>
+    <nav class="mui-bar mui-bar-tab">
+        <router-link class="mui-tab-item " to="/Home">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </router-link>
+        <router-link class="mui-tab-item" to="/tabbar-with-chat">
+            <span class="mui-icon mui-icon-email"></span>
+            <span class="mui-tab-label">会员</span>
+        </router-link>
+        <router-link class="mui-tab-item" to="/car">
+            <span class="mui-icon mui-icon-contact"><span class="mui-badge">0</span></span>
+            <span class="mui-tab-label">购物车</span>
+        </router-link>
+        <router-link class="mui-tab-item"to="/tabbar-with-map">
+            <span class="mui-icon mui-icon-gear"></span>
+            <span class="mui-tab-label">搜索</span>
+        </router-link>
+    </nav>
 
     </div>
 </template>
@@ -48,8 +48,4 @@
 </script>
 
 <style scoped>
-    /*css样式，scopd表示只在当前页面有效*/
-    .c{
-        color:red;
-    }
 </style>
